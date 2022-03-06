@@ -7,8 +7,10 @@ function SavedMovies() {
   return (
     <section>
       <Header isNavigation={true} />
-      <SearchForm />
-      <MoviesCardList place='saved-movies' />
+      <main>
+        <SearchForm />
+        <MoviesCardList place='saved-movies' />
+      </main>
       <Footer />
     </section>
   );

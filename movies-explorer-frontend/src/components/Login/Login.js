@@ -26,35 +26,37 @@ function Login(props) {
   return (
     <section className='login'>
       <LoginHeader text='Рады видеть!' />
-      <Form onSubmit={handleLoginSubmit}>
-        <div>
-          <Input
-            name='email'
-            label='E-mail'
-            type="email"
-            autoComplete="email"
-            value={email || ''}
-            onChange={changeEmail}
-					  placeholder="Email"
-					  required
-          />
-          <Input
-            name='password'
-            label='Пароль'
-            type='password'
-            value={password || ''}
-            onChange={changePassword}
-            placeholder="Пароль должен содержать не меньше 8 символов"
-            required
-          />
-        </div>
-        <SubmitButton label='Войти' />
-      </Form>
-      <SignNav
-        label='Ещё&nbsp;не&nbsp;зарегистрированы?'
-        link='Регистрация'
-        to='/signup'
-      />
+      <main>
+        <Form onSubmit={handleLoginSubmit}>
+          <div>
+            <Input
+              name='email'
+              label='E-mail'
+              type="email"
+              autoComplete="email"
+              value={email || ''}
+              onChange={changeEmail}
+              placeholder="Email"
+              required
+            />
+            <Input
+              name='password'
+              label='Пароль'
+              type='password'
+              value={password || ''}
+              onChange={changePassword}
+              placeholder="Пароль должен содержать не меньше 8 символов"
+              required
+            />
+          </div>
+          <SubmitButton label='Войти' />
+        </Form>
+        <SignNav
+          label='Ещё&nbsp;не&nbsp;зарегистрированы?'
+          link='Регистрация'
+          to='/signup'
+        />
+      </main>
     </section>
   );
 }

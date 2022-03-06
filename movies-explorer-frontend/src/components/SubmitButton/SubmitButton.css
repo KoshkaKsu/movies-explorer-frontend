@@ -8,9 +8,9 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    margin-top: 179px;
+    margin-top: 157px;
   }
-
+  
   .submit-button:hover {
     cursor: pointer;
   }
@@ -24,6 +24,6 @@
     .submit-button {
       font-size: 14px;
       line-height: 17px;
-      margin-top: 91px;
+      margin-top: 69px;
     }
   }

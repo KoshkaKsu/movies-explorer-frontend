@@ -8,15 +8,17 @@ import Footer from '../Footer/Footer';
 
 function Main({isLoggedIn}) {
   return (
-    <main>
+    <>
       <Header isLoggedIn={ isLoggedIn }/>
-      <Promo />
-      <AboutProject />
-      <Techs />
-      <AboutMe />
-      <Portfolio />
+      <main>
+        <Promo />
+        <AboutProject />
+        <Techs />
+        <AboutMe />
+        <Portfolio />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
 

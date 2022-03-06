@@ -63,7 +63,6 @@ function MoviesCardList({ place }) {
         isSaved={false}
        />
        </ul>
-      <button className='movies-card-list__more'>Ещё</button>
     </section>
   );
 }

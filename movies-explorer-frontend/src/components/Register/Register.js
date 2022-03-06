@@ -31,38 +31,40 @@ function Register(props) {
   return (
     <section className='register'>
       <LoginHeader text='Добро пожаловать!' />
-      <Form onSubmit={handleRegistrationSubmit} > 
-        <div>
-          <Input
-            name='name'
-            label='Имя'
-            type='text'
-            value={userName || ''}
-            onChange={changeUserName}
-            placeholder='Введите имя'
+      <main>
+        <Form onSubmit={handleRegistrationSubmit} > 
+          <div>
+            <Input
+              name='name'
+              label='Имя'
+              type='text'
+              value={userName || ''}
+              onChange={changeUserName}
+              placeholder='Введите имя'
+            />
+            <Input
+              name='email'
+              label='E-mail'
+              type='email'
+              value={email || ''}
+              onChange={changeEmail}
+              placeholder='pochta@yandex.ru'
+            />
+            <Input
+              name='password'
+              label='Пароль'
+              type='password'
+              value={password || ''}
+              onChange={changePassword}
+              placeholder='Введите пароль > 8 символов'
+            />
+          </div>
+          <SubmitButton
+            label='Зарегистрироваться'
           />
-          <Input
-            name='email'
-            label='E-mail'
-            type='email'
-            value={email || ''}
-            onChange={changeEmail}
-            placeholder='pochta@yandex.ru'
-          />
-          <Input
-            name='password'
-            label='Пароль'
-            type='password'
-            value={password || ''}
-            onChange={changePassword}
-            placeholder='Введите пароль > 8 символов'
-          />
-        </div>
-        <SubmitButton
-          label='Зарегистрироваться'
-        />
-      </Form>
-      <SignNav label='Уже зарегистрированы?' link='Войти' to='/signin' />
+        </Form>
+        <SignNav label='Уже зарегистрированы?' link='Войти' to='/signin' />
+      </main>
     </section>
   );
 }

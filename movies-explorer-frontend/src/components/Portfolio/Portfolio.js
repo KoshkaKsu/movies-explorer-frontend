@@ -8,7 +8,7 @@ function Portfolio() {
         className='portfolio__link'
         target='_blank'
         rel='noreferrer'
-        href='https://github.com/KoshkaKsu/how-to-learn/'>
+        href='https://koshkaksu.github.io/how-to-learn/index.html'>
         Статичный сайт <span className='portfolio__arrow'> &#8599; </span>
       </a>
       <hr className='portfolio__line' />
@@ -16,7 +16,7 @@ function Portfolio() {
         className='portfolio__link'
         target='_blank'
         rel='noreferrer'
-        href='https://github.com/KoshkaKsu/russian-travel/'>
+        href='https://koshkaksu.github.io/russian-travel/index.html'>
         Адаптивный сайт <span className='portfolio__arrow'> &#8599; </span>
       </a>
       <hr className='portfolio__line' />

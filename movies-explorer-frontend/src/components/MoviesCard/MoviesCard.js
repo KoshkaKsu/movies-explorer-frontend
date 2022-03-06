@@ -1,6 +1,7 @@
 import './MoviesCard.css';
 
 function MoviesCard({ movie, place, isSaved }) {
+
   return (
     <figure className='movies-card'>
       <img src={movie.src} alt={movie.title} className='movies-card__image' />
@@ -9,14 +10,14 @@ function MoviesCard({ movie, place, isSaved }) {
             <p className='movies-card__title'>{movie.title}</p>
           
             {place === 'saved-movies' && (
-              <button className='movies-card__btn movies-card__btn_type_close' />
+              <button
+              className='movies-card__btn movies-card__btn_type_close'
+              />
             )}
 
             {place === 'all-movies' && (
               <button
-                className={`movies-card__btn movies-card__btn_type_${
-                  isSaved ? 'full-heart' : 'empty-heart'
-                }`}
+                className='movies-card__btn movies-card__btn_type_empty-heart'
               />
             )}
         </div>

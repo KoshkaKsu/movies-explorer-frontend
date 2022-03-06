@@ -21,24 +21,26 @@ function Profile() {
   return (
       <section className='profile'>
         <Header isNavigation={true} />
-        <div className='profile__info' onSubmit={handleSubmit}>
-          <h1 className='profile__heading'>Привет, Ксюша!</h1>
-          <div className='profile__unit'>
-            <p className='profile__key'>Имя</p>
-            <input className='profile__value' name='name' id='profile-name' type='text' value={name || "Ксюша"}  onChange={handleChangeName} />
+        <main>
+          <div className='profile__info' onSubmit={handleSubmit}>
+            <h1 className='profile__heading'>Привет, Ксюша!</h1>
+            <div className='profile__unit'>
+              <p className='profile__key'>Имя</p>
+              <input className='profile__value' name='name' id='profile-name' type='text' value={name || "Ксюша"}  onChange={handleChangeName} />
+            </div>
+            <hr className='profile__line' />
+            <div className='profile__unit'>
+              <p className='profile__key'>Почта</p>
+              <input className='profile__value' name='email' id='profile-email' type='email' value={email || "ksenia.kuzn@mail.ru"} onChange={handleChangeEmail} />
+            </div>
           </div>
-          <hr className='profile__line' />
-          <div className='profile__unit'>
-            <p className='profile__key'>Почта</p>
-            <input className='profile__value' name='email' id='profile-email' type='email' value={email || "ksenia.kuzn@mail.ru"} onChange={handleChangeEmail} />
+          <div className='profile__buttons'>
+            <button className='profile__button'>Редактировать</button>
+            <button className='profile__button profile__button_quit'>
+              Выйти из аккаунта
+            </button>
           </div>
-        </div>
-        <div className='profile__buttons'>
-          <button className='profile__button'>Редактировать</button>
-          <button className='profile__button profile__button_quit'>
-            Выйти из аккаунта
-          </button>
-        </div>
+        </main>
       </section>
     );
   }
