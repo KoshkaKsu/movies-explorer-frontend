@@ -1,0 +1,66 @@
+.buttons-sign {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 24px 14px;
+}
+
+.buttons-sign__signup {
+  display: flex;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 16px;
+  color: #000;
+}
+
+.buttons-sign__signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 26px;
+  background-color: #2be080;
+  border-radius: 3px;
+  font-family: 'Inter', 'Helvetica', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 16px;
+  color: #000;
+  margin-left: 14px;
+}
+
+.buttons-sign__signup:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.buttons-sign__signin:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-sign {
+    margin: 21px 30px;
+  }
+
+  .buttons-sign__signup {
+    font-size: 12px;
+  }
+
+  .buttons-sign__signin {
+    font-size: 12px;
+    margin-left: 30px;
+    width: 76px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .buttons-sign {
+    margin: 21px 70px;
+  }
+}
