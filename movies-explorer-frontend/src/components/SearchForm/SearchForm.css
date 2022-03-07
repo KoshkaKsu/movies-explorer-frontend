@@ -21,7 +21,7 @@
 .search-form__input {
   border-color: rgba(232, 232, 232, 1);
   border-style: solid;
-  border-radius: 26px;
+  border-radius: 50px;
   height: 48px;
   box-sizing: border-box;
   padding: 15px 16px;
@@ -47,11 +47,11 @@
   position: relative;
   background-image: url(../../images/find.svg);
   height: 34px;
-  width: 34px;
+  width: 80px;
   border: none;
   top: -41px;
   margin: 0px 7px 0px auto;
-  padding: 15px;
+  padding: 17px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -53,7 +53,7 @@
   
   .profile__value:focus {
     outline: none;
-    border-bottom: 1px solid #3456F3;
+    border-bottom: 1px solid #2BE080;
   }
   
   .profile__line {

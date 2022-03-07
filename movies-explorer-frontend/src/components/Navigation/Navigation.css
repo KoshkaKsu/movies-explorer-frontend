@@ -98,7 +98,7 @@
   .navigation__user-icon {
     width: 100px;
     height: 30px;
-    background-image: url(../../images/accaunt.svg);
+    background-image: url(../../images/profile.svg);
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -128,7 +128,7 @@
     .navigation {
       flex-grow: 1;
       display: flex;
-      justify-content: right;
+      justify-content: space-between;
     }
   
     .navigation__main-nav {
@@ -139,7 +139,7 @@
   
     .navigation__link {
       font-weight: 400;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 18px;
       margin: 0 16px 0 0;
       padding: 0;
@@ -155,13 +155,12 @@
     } 
 
     .navigation__user-icon {
-      background-image: url(../../images/profile.svg);
-      margin: 21px 30px 23px 50px;
+      margin: 21px 30px 23px 0px;
   }
   }
   
   @media screen and (min-width: 1280px) {
     .navigation__user-icon {
-      margin: 21px 70px 23px 50px;
+      margin: 21px 70px 23px 0px;
   }
 }

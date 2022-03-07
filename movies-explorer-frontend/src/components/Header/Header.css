@@ -44,12 +44,12 @@
   
   @media screen and (min-width: 800px) {
     .header__logo {
-      margin: 18px 20px 18px 30px;
+      margin: 18px 44px 18px 30px;
     }
   }
   
   @media screen and (min-width: 1280px) {
     .header__logo {
-      margin: 18px 70px;
+      margin-left: 70px;
     }
   }

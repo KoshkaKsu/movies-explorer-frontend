@@ -30,7 +30,7 @@ function Profile() {
             </div>
             <hr className='profile__line' />
             <div className='profile__unit'>
-              <p className='profile__key'>Почта</p>
+              <p className='profile__key'>E-mail</p>
               <input className='profile__value' name='email' id='profile-email' type='email' value={email || "ksenia.kuzn@mail.ru"} onChange={handleChangeEmail} />
             </div>
           </div>

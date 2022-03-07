@@ -3,7 +3,7 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 import src1 from '../../images/movie1.jpg';
 import src2 from '../../images/movie2.jpg';
 
-function MoviesCardList({ place }) {
+function MoviesCardList(props) {
   return (
     <section className='movies-card-lists'>
       <ul className="movies-card-list">
@@ -14,7 +14,7 @@ function MoviesCardList({ place }) {
             '33 слова о дизайне',
           length: '1ч 42м',
         }}
-        place={place}
+        place={props.place}
         isSaved={true}
       />
       <MoviesCard
@@ -23,7 +23,7 @@ function MoviesCardList({ place }) {
           title: 'Киноальманах «100 лет дизайна»',
           length: '1ч 29м',
         }}
-        place={place}
+        place={props.place}
         isSaved={false}
        />
         <MoviesCard
@@ -32,7 +32,7 @@ function MoviesCardList({ place }) {
           title: 'Киноальманах «100 лет дизайна»',
           length: '1ч 29м',
         }}
-        place={place}
+        place={props.place}
         isSaved={false}
        />
         <MoviesCard
@@ -41,7 +41,7 @@ function MoviesCardList({ place }) {
           title: 'Киноальманах «100 лет дизайна»',
           length: '1ч 29м',
         }}
-        place={place}
+        place={props.place}
         isSaved={false}
        />
         <MoviesCard
@@ -50,7 +50,7 @@ function MoviesCardList({ place }) {
           title: 'Киноальманах «100 лет дизайна»',
           length: '1ч 29м',
         }}
-        place={place}
+        place={props.place}
         isSaved={false}
        />
         <MoviesCard
@@ -59,7 +59,7 @@ function MoviesCardList({ place }) {
           title: 'Киноальманах «100 лет дизайна»',
           length: '1ч 29м',
         }}
-        place={place}
+        place={props.place}
         isSaved={false}
        />
        </ul>
